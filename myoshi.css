@@ -1,6 +1,6 @@
 /* Profile Background */
 .profile-page.profile-custom-css {
-    background-image: url("YOUR IMAGE URL HERE") !important;
+    background-image: url("https://raw.githubusercontent.com/LTGNetworkPH/ltg-myoshi-template/refs/heads/main/img/v5bg.png") !important;
     background-size: cover !important;
     background-position: center !important;
     background-attachment: fixed !important;
