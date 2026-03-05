@@ -1,0 +1,290 @@
+.profile-page.profile-custom-css,
+.profile-page.profile-custom-css * {
+  cursor: url(https://raw.githubusercontent.com/LTGNetworkPH/oreo-cursors/refs/heads/icons/purple-icon/purple.svg) 35 41, auto !important;
+}
+
+/*------ profile username replace with logo------*/
+
+.profile-page.profile-custom-css .profile-display-name {
+    content: url(https://raw.githubusercontent.com/KoummandTTV/koummandlogo/refs/heads/main/koummand-color-png.png) !important;
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    margin-bottom: 0px !important;
+}
+
+/*------ amby image profile edge------*/
+
+.profile,
+.profile-page,
+.profile-page .content,
+.profile-page .panel,
+.profile-page .card,
+.profile-page .box,
+.profile-page .section {
+  overflow: visible !important;
+}
+
+.bounce {
+  width: 16px;
+  height: 16px;
+  background: #00;
+  border-radius: 50%;
+  display: inline-block;
+
+  animation: jellyBounce 1.6s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Jelly physics /
+@keyframes jellyBounce {
+
+  / idle /
+  0%, 100% {
+    transform: translateY(0) scaleX(1) scaleY(1);
+  }
+
+  / launch upward /
+  35% {
+    transform: translateY(-18px) scaleX(0.85) scaleY(1.2);
+  }
+
+  / peak stretch /
+  50% {
+    transform: translateY(-22px) scaleX(0.9) scaleY(1.1);
+  }
+
+  / falling /
+  70% {
+    transform: translateY(0) scaleX(1.15) scaleY(0.85);
+  }
+
+  / settle wobble */
+  85% {
+    transform: translateY(-4px) scaleX(0.95) scaleY(1.05);
+  }
+
+/* =========================================================
+   COZY FROSTED PANELS
+   ========================================================= */
+
+.profile .panel,
+.profile .module,
+.profile .box,
+.card,
+.contentBox {
+    position: relative;
+    background: rgba(245, 250, 245, 0.82);
+    border: 1px solid rgba(205, 220, 205, 0.6);
+    border-radius: 22px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:
+        0 8px 22px rgba(160, 180, 160, 0.18),
+        inset 0 0 18px rgba(255, 255, 255, 0.6);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    outline: 2px dashed rgba(193, 216, 240, 1);
+    outline-offset: 2px;
+}
+
+
+/* Soft hover lift */
+.profile .panel:hover,
+.profile .module:hover,
+.profile .box:hover,
+.card:hover,
+.contentBox:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 12px 28px rgba(170, 190, 170, 0.25),
+        inset 0 0 22px rgba(255, 255, 255, 0.75);
+}
+
+/* =========================================================
+   PASTEL HEADERS
+   ========================================================= */
+
+.panel .panel-heading,
+.card-header,
+.sectionHeader,
+.profileSection h3,
+.panel-heading,
+.contentBox .title,
+.module .title {
+    position: relative;
+    background: linear-gradient(180deg, #dcf3ff, #a2d2df) !important;
+    color: #396d7c !important;
+    padding: 12px 18px !important;
+    border-radius: 999px !important;
+    font-weight: 600;
+    text-align: center;
+    text-shadow:
+        0 0 4px rgba(193, 216, 240, 1),
+        0 0 10px rgba(225, 241, 253, 1);
+}
+
+/* =========================
+   CONDENSED COMMENT SECTION
+   ========================= */
+
+/* Tighten entire comments panel */
+.comments,
+.panel .comments,
+.comment-box {
+  padding: 10px 12px !important;
+}
+
+/* Shrink comment form area */
+.comments .comment-form,
+.comment-box form {
+  padding: 10px !important;
+}
+
+/* Smaller textarea */
+.comments textarea,
+.comment-box textarea {
+  padding: 10px !important;
+  min-height: 60px !important;
+  border-radius: 8px !important;
+}
+
+/* Smaller post button */
+.comments input[type="submit"],
+.comment-box input[type="submit"],
+button.post-comment {
+  padding: 8px 16px !important;
+  border-radius: 10px !important;
+  font-size: 0.9rem !important;
+}
+
+/* Reduce spacing between comment rows */
+.comments .comment-list li,
+.comment {
+  padding: 14px 10px !important;
+  margin: 0 !important;
+}
+
+/* Add thin subtle divider line */
+.comments .comment-list li:not(:last-child),
+.comment:not(:last-child) {
+  border-bottom: 1px solid rgba(180,200,220,0.2) !important;
+}
+
+/* Make avatars smaller + cleaner */
+.comments .avatar,
+.comment .avatar {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+}
+
+.comments .avatar img,
+.comment .avatar img {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 50% !important;
+}
+
+/* Reduce spacing between avatar and text */
+.comment .avatar {
+  margin-right: 10px !important;
+}
+
+/* Make reply bubble more compact */
+.comment .reply,
+.comment .message {
+  padding: 10px 12px !important;
+  border-radius: 8px !important;
+  max-width: calc(100% - 110px) !important;
+}
+
+/* Reduce space between name and message */
+.comment .meta,
+.comment .comment-meta {
+  margin-bottom: 4px !important;
+  font-size: 0.85rem !important;
+}
+
+/* Reduce delete link spacing */
+.comment a.delete,
+.comment .delete {
+  margin-top: 4px !important;
+  font-size: 0.8rem !important;
+}
+
+/* =========================================
+   COMMENTS — ALL AVATARS CIRCULAR
+   ========================================= */
+
+/* Main comment avatars */
+.profile-page #comments .comment-avatar{
+  border-radius: 50% !important;
+}
+
+/* Reply avatars (retry just in case) */
+.profile-page #comments .profile-comment div[style*="width: 24px"]{
+  border-radius: 50% !important;
+}
+
+/* =========================================
+   COMMENTS REPLY AVATAR AS CIRCLE
+   ========================================= */
+
+/* Only inside reply blocks */
+.profile-page #comments .profile-comment div[style*="border-left: 2px"] a > img.user-avatar{
+  border-radius: 999px !important;
+  border: 1px solid rgba(255,255,255,0.14) !important; /* or none if you prefer */
+  overflow: hidden !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* ========================= FRIEND CIRCLES – SINGLE LAYER FIX ========================= */
+.profile-page.profile-custom-css .friend-grid a,
+.profile-page.profile-custom-css .friends-grid a,
+.profile-page.profile-custom-css [class*="friends"] a {
+    width: 72px !important;
+    height: 72px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    display: inline-block !important;
+    border: 0px dashed rgba(185,205,185,0.85);
+    background: rgba(255,255,255,0.9);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Make the inner image fill container exactly once */
+.profile-page.profile-custom-css .friend-grid a img,
+.profile-page.profile-custom-css .friends-grid a img,
+.profile-page.profile-custom-css [class*="friends"] a img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Hover effect */
+.profile-page.profile-custom-css .friend-grid a:hover,
+.profile-page.profile-custom-css .friends-grid a:hover,
+.profile-page.profile-custom-css [class*="friends"] a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(160,180,160,0.25);
+}
+
+/* ========================= FRIENDS GRID – FLEX FIX ========================= */
+.profile-page.profile-custom-css .friend-grid,
+.profile-page.profile-custom-css .friends-grid,
+.profile-page.profile-custom-css [class*="friends"] .card-body {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    padding: 10px 5px !important;
+    overflow: visible !important;
+    gap: 10px;
+}
